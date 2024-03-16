@@ -214,7 +214,7 @@ h4 {
     width: 80px; 
     height: auto;
     margin: 22px; 
-    margin-bottom: 45px;
+    margin-bottom: 20px;
 }
 
 #Fiddle_Skins {
@@ -222,19 +222,19 @@ h4 {
     flex-direction: column;
     align-items: center; 
     justify-content: center;
-    height: 100vh;
     position: absolute; 
-    right: 10%; 
-    top: 50%; 
-    transform: translateY(-55%);
+    right: 8.5%; 
+    top: 35%; 
+    transform: translateY(-35%);
 }
 
 .row2 {
     display: flex;
-    gap: 50px;
+    gap: 20px;
     align-items: center;
     justify-content: space-between; 
     flex-grow: 1; 
+    transform: translateY(-10%);
 }
 
 .row2:last-child {
@@ -272,30 +272,5 @@ p {    font-family: "Inria Serif", serif;
     position: absolute;
     margin-left: 45px;
 }
-.skin-button {
-    width: 80px;
-    height: 80px;
-    background-image: url('https://static.wikia.nocookie.net/leagueoflegends/images/4/43/Fiddlesticks_OriginalCircle.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border: none !important; 
-    outline: none;
-    cursor: pointer;
-    margin-right: 20px;
-    margin-top: 15%;
-    margin-bottom: 5%;
-    transform: translateY(-60%);
-    border-radius: 100%; 
-}
 
-#Fiddle_Skins {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    position: absolute;
-    right: 10%;
-    top: 50%;
-    transform: translateY(-50%);
-}
+
