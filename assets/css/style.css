@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jim+Nightshade&display=swap');
+:root{
+    --color-nome: #9C644A;
+    --color-apelido: #644646;
+    --font-titulo: "Inria Serif", serif;
+    --font-subtitulo: "Inria Serif", serif;
+
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+
+header::before{
+    content: "";
+    background-image: url("../Images/011422_Fiddlesticks_Splash_v1.jpg");
+    background: rgb(9,14,40);
+    background: linear-gradient(119deg, rgba(9,14,40,1) 22%, rgba(255,255,255,0) 43%), url("../Images/011422_Fiddlesticks_Splash_v1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: absolute;
+    z-index: -5;
+    top:0;
+    left: 0;
+  
+}
+
+h1 {
+    font-family: "Inria Serif", serif;
+    color: #754c39;
+    font-size: 70px;
+    font-weight:700;
+    margin-left:5%;
+    position: flex;
+    text-shadow: 2px 1px 3px rgb(0, 0, 0);
+    margin-top: 1px;
+}
+
+.Mage_icon {   
+    width: 5%;
+    height: auto;
+    position: absolute;
+    left: 1px;
+      
+    }
+h2 {
+    font-family: "Inria Serif", serif;
+    color: #644646;
+    font-size: 80px;
+    font-weight: 600;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    
+}
+h3 {
+    font-family: "Inria Serif", serif;
+    color: #786C2F;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: calc(100% - 60px);
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    text-decoration: underline;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
+}
+
+h4 {
+    color: #ad3c3c;
+    font-family: Alegreya
+    font-size: 50px;
+    font-weight:600; 
+    margin-bottom: 90px;
+}
+
+#apresentacao{
+    display:flex;
+    position: absolute;
+    left: 10%;
+    font-weight:bolder;
+    line-height: 1px;
+    font-size: 20px;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+    padding: 5px;
+}
+
+
+#texto-apresentacao{
+    color: var(--color-nome)
+
+
+}
+
+.ability p {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.ability.active p {
+    opacity: 1;
+}
+#Fiddle_Abilities .ability-button {
+    width: 64px;
+    height: 64px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 28px;
+}
+
+#Fiddle_Abilities .ability-button:nth-child(1) {
+    background-image: url('https://static.wikia.nocookie.net/leagueoflegends/images/c/c6/Fiddlesticks_A_Harmless_Scarecrow.png');
+}
+
+#Fiddle_Abilities .ability-button:nth-child(2) {
+    background-image: url('https://static.wikia.nocookie.net/leagueoflegends/images/9/92/Fiddlesticks_Terrify.png');
+}
+
+#Fiddle_Abilities .ability-button:nth-child(3) {
+    background-image: url('https://static.wikia.nocookie.net/leagueoflegends/images/3/36/Fiddlesticks_Bountiful_Harvest.png');
+}
+
+#Fiddle_Abilities .ability-button:nth-child(4) {
+    background-image: url('https://static.wikia.nocookie.net/leagueoflegends/images/0/02/Fiddlesticks_Reap.png');
+}
+
+#Fiddle_Abilities .ability-button:nth-child(5) {
+    background-image: url('https://static.wikia.nocookie.net/leagueoflegends/images/c/c4/Fiddlesticks_Crowstorm.png');
+}
+#Fiddle_Abilities .ability-button {
+    width: 64px;
+    height: 64px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-left: 60px;
+    margin-bottom: 28px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ad3c3c;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#Fiddle_Abilities .ability-button:hover {
+    color: #ffffff;
+    background-color: #ad3c3c;
+}
+
+#Fiddle_Abilities .ability-button::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+#Fiddle_Abilities .ability-button:hover::before {
+    opacity: 1;
+}
+.tooltip {
+    position: absolute;
+    background-color: #fff;
+    color: #000;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+
+
+#Fiddle_skins {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+#apresentacao, #Fiddle_Abilities {
+    margin-bottom: 20px; 
+}
+
+#Fiddle_Skins {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end; 
+}
+
+#Fiddle_Skins img {
+    width: 80px; 
+    height: auto;
+    margin: 22px; 
+    margin-bottom: 50px;
+}
+
+#Fiddle_Skins {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alterado para alinhar à direita */
+    justify-content: center;
+    height: 100vh;
+    position: absolute; /* Adicionado posicionamento absoluto */
+    right: 10%; /* Ajustado para a margem direita de 10% */
+    top: 50%; /* Centralizado verticalmente */
+    transform: translateY(-50%); /* Centralizado verticalmente */
+}
+
+.row2 {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between; 
+    flex-grow: 1; 
+}
+
+.row2:last-child {
+    justify-content: space-around; /
+}
+
