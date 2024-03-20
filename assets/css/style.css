@@ -11,7 +11,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: black;
+    background-color: white;
 }
 
 header::before{
@@ -87,7 +87,7 @@ h4 {
 #apresentacao{
     display:flex;
     position: absolute;
-    left: 10%;
+    left: 8%;
     font-weight:bolder;
     line-height: 1px;
     font-size: 20px;
@@ -102,6 +102,10 @@ h4 {
 
 }
 
+#apresentacao ul{
+    grid-area: auto;
+    
+}
 .ability p {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
@@ -274,3 +278,30 @@ p {    font-family: "Inria Serif", serif;
 }
 
 
+#secao-orcamento {
+    height: 100vh;
+    padding: 1rem;
+}
+#secao-orcamento h2{
+    font-family: var(--font-subtitulo);
+    font-size: 40px;
+    color: aliceblue;
+    margin: 0 auto;
+}
+#secao-orcamento form{
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+.linha {
+    grid-column: 1 / 3;
+}
+input[type=radio]
+{
+    accent-color: blue;
+}
