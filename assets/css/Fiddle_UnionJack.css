@@ -11,14 +11,14 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: black;
+    background-color: rgb(9,14,40);
 }
 
 header::before{
     content: "";
-    background-image: url("../Images/011422_Fiddlesticks_Splash_v1.jpg");
+    background-image: url("../Images/union-jack-fiddlesticks-new-splash-art-update-uhdpaper.com-hd-7.1367.jpg");
     background: rgb(9,14,40);
-    background: linear-gradient(119deg, rgba(9,14,40,1) 22%, rgba(255,255,255,0) 43%), url("../Images/011422_Fiddlesticks_Splash_v1.jpg");
+    background: linear-gradient(119deg, rgba(9,14,40,1) 22%, rgba(255,255,255,0) 43%), url("../Images/union-jack-fiddlesticks-new-splash-art-update-uhdpaper.com-hd-7.1367.jpg");
     background-size:cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -27,23 +27,10 @@ header::before{
     position: absolute;
     z-index: -5;
     top:0;
-    left: 0;
+    left:;
   
 }
-li {
-    font-family: "Inria Serif", serif;
-    color: #786C2F;
-    font-size: 20px;
-    font-weight: 600;
-    position: absolute;
-    top: calc(100% - 60px);
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-    text-decoration: underline;
-    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
-    
-}
+
 h1 {
     font-family: "Inria Serif", serif;
     color: #754c39;
@@ -64,7 +51,7 @@ h1 {
     }
 h2 {
     font-family: "Inria Serif", serif;
-    color: #644646;
+    color: #151e50;
     font-size: 80px;
     font-weight: 600;
     text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
@@ -263,7 +250,28 @@ p {    font-family: "Inria Serif", serif;
     text-shadow: 2px 1px 3px rgb(0, 0, 0);
     margin-top: -5.5%;
 }
+.skin-container {
+    text-align: center;
+    margin-bottom: 1px;
+    display: inline-block; 
+}
 
+.skin-container img {
+    width: 100px;
+    height: auto;
+    display: block; 
+    margin: 0 auto; 
+}
+
+.skin-container span {
+    font-family: "Inria Serif" serif;
+    display: block;
+    margin-top: -35px;
+    color: #fff;
+    font-size: 24px;
+    position: absolute;
+    margin-left: 45px;
+}
 
 .skin-button {
     text-decoration: none;
