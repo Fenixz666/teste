@@ -28,11 +28,13 @@
     <p>Skins Disponíveis</p>
     <section id="apresentacao">
         <div>
+            <ul>
             <h4>  P - UM ESPANTALHO INOFENSIVO</h4>
             <h4>  Q - ATERRORIZAR</h4>
             <h4>  W - COLHEITA FARTA</h4>
             <h4>  E - CEIFAR</h4>
             <h4>  R - TEMPESTADE DE CORVOS</h4>
+            </ul>
         </div>
     </section>
     <section id="Fiddle_Abilities">
@@ -80,7 +82,33 @@
     </section>    
     
    </div>
-
+<section id="secao-orcamento">
+    <h2>Quanto eu vou gastar?</h2>
+    <form action="">
+        <div class="campo linha">
+            <label for="Skins">Skins que vai comprar</label>
+            <input type="text" name="Skins" id="">
+        </div>
+        <div class="campo">    
+            <label for="paginas"> Qntd de pag</label>
+            <input type="number" id="paginas" min="1" value="1">
+            <label for="tipo"> Tipo site</label>
+            <select id="tipo">
+                <option value ="1" selected> estático </option>
+                <option value="2">dinâmico</option> 
+            </select>
+        </div>
+        <div class="campo linha">
+            <label for="">Você já tem o campeão?</label>
+            <input type="radio" name="campeao" id="campeao_sim">
+            <label for="campeao_sim">Sim, tenho</label>
+            <input type="radio" name="campeao" id="campeao_nao">
+            <label for="campeao_nao">Não tenho</label>
+        </div>
+        <input type="checkbox" id="js">
+        <label for="js"> tem automação com JS</label>
+    </form>
+</section>
 
     
 </body>
