@@ -93,6 +93,30 @@ h1 {
     left: 1px;
       
     }
+
+.RP_icon{
+    width: 2%;
+    height: auto;
+    left: 1px;
+    position: absolute;
+    bottom:150px;
+    left: 47%;
+    transform: translateX(-50%);
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.preco {
+    font-size: 30px;
+    color: #a3954d;
+    position: absolute;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
+    position: absolute;
+    bottom: 145px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 h2 {
     font-family: "Inria Serif", serif;
     color: #28a7c1;
