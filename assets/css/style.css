@@ -63,7 +63,7 @@ a:active {
    
     color: #786C2F; 
 }
-#Lore {
+#Biografia {
     margin-top: 40%;
     margin-bottom: 80%;
     position: absolute;
@@ -76,6 +76,10 @@ a:active {
     z-index: -9;
     color: white;
     transform: translateY();
+}
+.Vozes {
+    margin-top: 130%;
+    position: absolute;
 }
 h1 {
     font-family: "Inria Serif", serif;
