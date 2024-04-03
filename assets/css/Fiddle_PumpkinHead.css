@@ -68,7 +68,7 @@ h1 {
         height: auto;
         left: 1px;
         position: absolute;
-        bottom:85px;
+        bottom:77px;
         left: 75%;
         transform: translateX(-50%);
         margin: 0;
@@ -93,7 +93,7 @@ h2 {
     font-weight: 600;
     text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
     position: absolute;
-    bottom: 60px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
