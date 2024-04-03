@@ -21,8 +21,8 @@ html {
 header::before {
     content: "";
     background-image: 
+    linear-gradient(to bottom, #100e0e00 85%, #100e0e 100%), 
         linear-gradient(119deg, rgba(9,14,40,1) 22%, rgba(255,255,255,0) 43%), 
-        linear-gradient(to bottom, #100e0e00 85%, #100e0e 100%), 
         url("../Images/spectral-fiddlesticks-new-splash-art-update-uhdpaper.com-hd-7.1366.jpg"); 
     background-size: cover;
     background-repeat: no-repeat; 
