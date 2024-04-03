@@ -12,25 +12,69 @@ body {
     padding: 0;
     margin: 0;
     background-color: black;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
 }
 
-header::before{
+header::before {
     content: "";
-    background-image: url("../Images/spectral-fiddlesticks-new-splash-art-update-uhdpaper.com-hd-7.1366.jpg");
-    background: rgb(9,14,40);
-    background: linear-gradient(119deg, rgba(9,14,40,1) 22%, rgba(255,255,255,0) 43%), url("../Images/spectral-fiddlesticks-new-splash-art-update-uhdpaper.com-hd-7.1366.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
+    background-image: 
+        linear-gradient(119deg, rgba(9,14,40,1) 22%, rgba(255,255,255,0) 43%), 
+        linear-gradient(to bottom, #100e0e00 85%, #100e0e 100%), 
+        url("../Images/spectral-fiddlesticks-new-splash-art-update-uhdpaper.com-hd-7.1366.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat; 
     height: 100vh;
     width: 100vw;
     display: block;
     position: absolute;
     z-index: -5;
-    top:0;
+    top: 0;
     left: 0;
-  
+    right: 20%;
 }
 
+li {
+    font-family: "Inria Serif", serif;
+    color: #786C2F;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: calc(100% - 60px);
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    text-decoration: underline;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
+    
+}
+a:link,
+a:visited {
+    color: #786C2F;
+}
+
+a:hover,
+a:active {
+   
+    color: #786C2F; 
+}
+#Lore {
+    margin-top: 40%;
+    margin-bottom: 80%;
+    position: absolute;
+    font-family: "Merriweather", serif;
+    text-align: justify;
+    padding: 30%;
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+    background-color:#100e0e;
+    z-index: -9;
+    color: white;
+    transform: translateY();
+}
 h1 {
     font-family: "Inria Serif", serif;
     color: #754c39;
