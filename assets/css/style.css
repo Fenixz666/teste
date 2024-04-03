@@ -40,7 +40,7 @@ header::before {
 
 li {
     font-family: "Inria Serif", serif;
-    color: #786C2F;
+    color: #fff8d2;
     list-style: none;
     font-size: 20px;
     font-weight: 600;
@@ -53,15 +53,32 @@ li {
     text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
     
 }
+
+.Biografia {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #ad3c3c00; 
+    color: white; 
+    font-family: "Inria Serif", serif; 
+    text-decoration: none; 
+    border: 2px solid #786C2F; 
+        transition: background-color 0.3s, color 0.3s; 
+}
+
+.Biografia:hover {
+    background-color: #786c2f00;
+    color: #786C2F; 
+}
+
 a:link,
 a:visited {
-    color: #786C2F;
+    color: #fcee9e;
 }
 
 a:hover,
 a:active {
    
-    color: #786C2F; 
+    color: #fcee9e; 
 }
 #Biografia {
     margin-top: 40%;

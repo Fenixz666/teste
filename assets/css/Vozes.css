@@ -11,7 +11,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: black;
+    background-color: #100e0e;
     overflow-x: hidden;
 }
 html {
@@ -34,28 +34,155 @@ header::before {
     left: 0;
     right: 20%;
 }
+h3::after {
+    
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 10px 5px; /* Tamanho da seta (10px de altura e 5px de largura) */
+        border-color: transparent transparent #918d80 transparent; /* Transparente na base (para a seta ser cortada) */
+        position: absolute;
+        right: 0;
+        left: 45.5%;
+        top: 50%;
+        transform: translateY(80%) rotate(180deg); /* Rotaciona a seta para apontar para baixo */
+    
+}
+
 h1 {
     font-family: "Inria Serif", serif;
-    color: #754c39;
-    font-size: 70px;
+    color: #f0e6d2;
+    font-size: 90px;
     font-weight:700;
     position: absolute;
     text-shadow: 2px 1px 3px rgb(0, 0, 0);
-    bottom: 80px;
-    left: 43.5%;
+    bottom: 90px;
+    left: 41.5%;
 }
 
 
 h2 {
     font-family: "Inria Serif", serif;
-    color: #644646;
-    font-size: 80px;
+    color: #c8aa6e;
+    font-size: 20px;
     font-weight: 600;
     text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
     position: absolute;
-    bottom: 50px;
+    bottom: 130px;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
     
+}
+h3 {
+    font-family: "Inria Serif", serif;
+    color: #918d80;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    
+}
+
+#Introducao {
+    font-family: "Inria Serif", serif;
+    font-style: italic;
+    text-align: center;
+    margin-top: 50%;
+    color: white;
+    padding: 50px;
+    font-size: 20px;
+    position: absolute;
+    left: 32%;
+}
+
+#Introducao::after {
+    content: '';
+    display: block;
+    width: 110%; /* Largura da linha */
+    height: 1px; /* Espessura da linha */
+    background-color: #242525; /* Cor da linha */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-49%);
+    position: absolute;
+    bottom: 9%;
+}
+
+li {
+    font-family: "Inria Serif", serif;
+    color: #fff8d2;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: calc(560% - 60px);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 150%;
+    padding: 10%;
+    text-decoration: underline;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
+    
+}
+
+.Inicio {
+    display: inline-block;
+    bottom: 5000%;
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    background-color: #ad3c3c00; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    font-family: "Inria Serif", serif; /* Fonte do texto */
+    text-decoration: none; /* Remover sublinhado */
+    border: 2px solid #786C2F; /* Borda do botão */
+        transition: background-color 0.3s, color 0.3s; /* Transição suave ao passar o mouse */
+}
+
+.Inicio:hover {
+    background-color: #786c2f00; /* Cor de fundo ao passar o mouse */
+    color: #786C2F; /* Cor do texto ao passar o mouse */
+}
+
+a:link,
+a:visited {
+    color: #fcee9e;
+}
+
+a:hover,
+a:active {
+   
+    color: #fcee9e; 
+}
+#Inicio {
+    margin-top: 30%;
+    position: absolute;
+    font-family: "Merriweather", serif;
+    text-align: justify;
+    padding: 30%;
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+    background-color:#100e0e;
+    z-index: -9;
+    color: white;
+    bottom: 50%;
+
+}
+#Historia{
+    margin-top: 80%;
+    position: absolute;
+    font-family: "Merriweather", serif;
+    text-align: justify;
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+    z-index: 0;
+    margin: -5%;
+    color: white;
+    bottom: -920%;
+    left: 3%;
 }

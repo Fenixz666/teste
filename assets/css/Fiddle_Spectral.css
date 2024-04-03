@@ -36,45 +36,7 @@ header::before {
     right: 20%;
 }
 
-li {
-    font-family: "Inria Serif", serif;
-    color: #786C2F;
-    list-style: none;
-    font-size: 20px;
-    font-weight: 600;
-    position: absolute;
-    top: calc(100% - 60px);
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-    text-decoration: underline;
-    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
-    
-}
-a:link,
-a:visited {
-    color: #786C2F;
-}
 
-a:hover,
-a:active {
-   
-    color: #786C2F; 
-}
-#Lore {
-    margin-top: 40%;
-    margin-bottom: 80%;
-    position: absolute;
-    font-family: "Merriweather", serif;
-    text-align: justify;
-    padding: 30%;
-    text-rendering: optimizeLegibility;
-    font-size: 20px;
-    background-color:#100e0e;
-    z-index: -9;
-    color: white;
-    transform: translateY();
-}
 h1 {
     font-family: "Inria Serif", serif;
     color: #754c39;
@@ -316,7 +278,7 @@ p {    font-family: "Inria Serif", serif;
     margin-left:71.2%;
     position:absolute;
     text-shadow: 2px 1px 3px rgb(0, 0, 0);
-    margin-top: -6.5%;
+    margin-top: -5.5%;
 }
 .skin-container {
     text-align: center;
