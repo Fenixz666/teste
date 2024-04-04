@@ -21,7 +21,7 @@ header::before{
     background-image: 
     linear-gradient(to bottom, #100e0e00 85%, #100e0e 100%), 
         linear-gradient(119deg, rgba(9,14,40,1) 22%, rgba(255,255,255,0) 43%), 
-        url("../Images/pumpkinhead-fiddlesticks-new-splash-art-update-uhdpaper.com-hd-7.1364.jpg");     background-size:cover;
+        url("../Images/fiddle-me-timbers-finder-fiddlesticks-new-splash-art-update-uhdpaper.com-hd-7.1372.jpg");     background-size:cover;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100vw;
@@ -71,7 +71,7 @@ h1 {
         left: 1px;
         position: absolute;
         bottom:77px;
-        left: 75%;
+        left: 68.5%;
         transform: translateX(-50%);
         margin: 0;
         display: flex;
@@ -90,7 +90,7 @@ h1 {
     }
 h2 {
     font-family: "Inria Serif", serif;
-    color: #cf9029;
+    color: #006842;
     font-size: 80px;
     font-weight: 600;
     text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
