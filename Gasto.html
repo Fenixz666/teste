@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/Gasto.css">
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+    <div class="container">
+    <section id="secao-cadastro">
+        <h2>Dê sua ideia para uma skin!</h2>
+        <form action="">
+            <div class="campo linha">
+                <label for="nome">Nome da skin:</label>
+                <input type="text" id="nome" autocomplete="off">
+            </div>
+            
+            <div class="campo">
+                <label for="email">Email:</label>
+                <input type="text" id="email" autocomplete="off">
+            </div>
+           
+            <div class="campo linha">
+                <div class="opcao-skin"></div>
+                <label for="skin">Skin preferida:</label>
+                <select id="skin">
+                    <option value="1">Fiddlesticks Espectral</option>
+                    <option value="2">Fiddlesticks Union Jack</option>
+                    <option value="3">Fiddlesticks Velho Oeste</option>
+                    <option value="4">Fiddlesticks Cabeça de Abóbora</option>
+                    <option value="5">Fiddlesticks Perna-de-Pau</option>
+                    <option value="6">Fiddlesticks Festa Suspresa</option>
+                    <option value="7">Fiddlesticks Doces Trevosos</option>
+                    <option value="8">Fiddlesticks Ascendente</option>
+                    <option value="9">Fiddlesticks Pretoriano</option>
+                    <option value="10">Fiddlesticks Nêmesis Estelar</option>
+                </select>
+            </div>
+            
+            
+            <div class="campo linha">
+                <label for="prototipo_sim">Você joga muito com esse campeão?</label>
+                <div>
+                
+            <input type="radio" id="sim" name="joga-muito" value="sim">
+            <label for="sim">Sim</label>
+            <input type="radio" id="nao" name="joga-muito" value="nao">
+            <label for="nao">Não</label>
+                </div>
+            </div>
+
+            <div class="campo">
+                <label for="js">Deseja que nossa resposta seja enviada por E-mail?</label>
+                <input type="checkbox" id="js">
+            </div>
+            
+            <div class="campo">
+                <label for="tempo">Há quanto tempo você joga com o campeão?:</label>
+                <input type="range" min="1" max="12" id="tempo">
+                <output id="valor">Escolha a quantidade de meses</output>
+            </div>
+            <button id="btn-cadastro">Envie sua ideia</button>
+        </form>
+    </section>
+</div>
+<div class="voltar">
+    <a href="index.html" class="Biografia">Voltar
+
+</a> 
+</div>
+                    
+
+</body>
+</html>

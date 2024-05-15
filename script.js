@@ -1,12 +1,23 @@
-window.addEventListener('scroll', function() {
-    var scrollTop = window.scrollY;
-    var loreSection = document.getElementById('Lore');
-    var nav = document.querySelector('nav');
-
-    // Se a posição do scroll for maior ou igual à posição do topo da seção "Lore"
-    if (scrollTop >= loreSection.offsetTop) {
-        nav.style.backgroundColor = 'rgba(255, 255, 255, 1)'; // Muda a cor de fundo do 'Saiba mais' para cobrir a página
-    } else {
-        nav.style.backgroundColor = 'rgba(255, 255, 255, 0.5)'; // Mantém a cor de fundo do 'Saiba mais' transparente
-    }
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelector("#tempo").addEventListener("input", calcular);
+    document.querySelectorAll('input[name="prototipo"]').forEach((radio) => {
+        radio.addEventListener("input", calcular);
+    });
 });
+
+function calcular() {
+    const QuantidadeTempo = document.querySelector("#tempo").value;
+    let tempo = QuantidadeTempo * 1;
+    document.querySelector("#valor").innerText = "Meses: " + tempo ;
+
+    let valor = 0;
+    const tipo = document.querySelector("#skin").value; 
+    if (tipo == 2) valor += 2000;
+
+    const prototipoSim = document.querySelector("#prototipo_sim").checked;
+    const prototipoNao = document.querySelector("#prototipo_nao").checked;
+
+}
+document.getElementById("btn-cadastro").addEventListener("click", function() {
+   
+    alert("Ideia enviada!");})

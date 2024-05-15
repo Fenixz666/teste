@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Jim+Nightshade&display=swap&https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+:root {
+    --color-nome: #9C644A;
+    --color-apelido: #644646;
+    --font-titulo: "Inria Serif", serif;
+    --font-subtitulo: "Inria Serif", serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #100e0e;
+}
+
+header::before {
+    content: "";
+    background-color: #100e0e;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: block;
+    position: absolute;
+    z-index: -5;
+    top: 0;
+    left: 0;
+    right: 20%;
+}
+
+li {
+    font-family: "Inria Serif", serif;
+    color: #fff8d2;
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+    top: calc(100% - 60px);
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    text-decoration: underline;
+    text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
+}
+
+h2 {
+    font-family: "Inria Serif", serif;
+    color: #786C2F;
+    font-size: 60px;
+    font-weight: 700;
+    text-shadow: 2px 1px 3px rgb(0, 0, 0);
+    margin-top: 1px;
+}
+
+#secao-cadastro label,
+#secao-cadastro input,
+#secao-cadastro output {
+    color: white;
+}
+
+.opcao-skin,
+.opcao-joga-muito {
+    flex: 1;
+}
+
+
+.Biografia {
+    display: inline-block;
+    padding: 10px 20px;
+    left: 50%;
+    background-color: #ad3c3c00;
+    color: white;
+    font-family: "Inria Serif", serif;
+    text-decoration: none;
+    border: 2px solid #786C2F;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Biografia:hover {
+    background-color: #786c2f00;
+    color: #786C2F;
+}
+
+a:link,
+a:visited {
+    color: #fcee9e;
+}
+
+a:hover,
+a:active {
+    color: #fcee9e;
+}
+
+#Biografia {
+  
+    font-family: "Merriweather", serif;
+    text-align: justify;
+    padding: 30%;
+    text-rendering: optimizeLegibility;
+    font-size: 20px;
+    background-color: #100e0e;
+    z-index: -9;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.campo.linha div {
+    display: flex;
+}
+
+.voltar {
+    display: flex;
+    justify-content: center;
+    margin-top: -70px; /* Ajuste a margem conforme necessário */
+}
+
+#secao-cadastro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo semi-transparente para destaque */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#secao-cadastro label,
+#secao-cadastro input,
+#secao-cadastro button {
+    margin: 5px 0; 
+    text-align: center;
+    width: 100%; 
+}
+
+#secao-cadastro label {
+    display: block; 
+}
+
+

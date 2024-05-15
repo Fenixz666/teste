@@ -34,6 +34,23 @@ header::before {
     left: 0;
     right: 20%;
 }
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(-120px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h1, h2, h3 {
+    opacity: 0; /* Começa invisível */
+    animation: fadeUp 0.5s ease-in-out forwards; /* Aplica a animação */
+}
+
 h3::after {
     
         content: '';
@@ -70,7 +87,7 @@ h2 {
     text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
     position: absolute;
     bottom: 130px;
-    left: 50%;
+    left: 44.5%;
     transform: translateX(-50%);
     margin: 0;
     
@@ -83,7 +100,7 @@ h3 {
     text-shadow: 2px 1px 3px rgba(0, 0, 0, 1);
     position: absolute;
     bottom: 40px;
-    left: 50%;
+    left: 45%;
     transform: translateX(-50%);
     margin: 0;
     

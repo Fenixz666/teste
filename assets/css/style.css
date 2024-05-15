@@ -307,7 +307,16 @@ h4 {
     flex-grow: 1; 
     transform: translateY(-10%);
 }
-
+.gasto {
+    position: absolute; /* ou use 'position: fixed' se quiser que ele fique fixo mesmo ao rolar a página */
+    left: 13%;
+    top: 70%;
+    
+    transform: translateY(100%);
+}
+.gasto img {
+    width: 80px;
+}
 .row2:last-child {
     justify-content: space-around; /
 }
